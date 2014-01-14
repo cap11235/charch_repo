@@ -1,0 +1,22 @@
+# vim files
+*.swp
+
+# quilt files
+.pc
+patches/series
+
+# ignore generated files
+/*/*.install
+/*/*.pkg.tar.xz
+/*/*.tar.gz
+/*/PKGBUILD
+/*/cabal.patch
+/*/source.patch
+/*/*.orig
+/*/src
+/*/*-build.log
+/*/*-package.log
+
+# ignore chroot environments
+i686-chroot/
+x86_64-chroot/

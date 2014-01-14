@@ -1,0 +1,20 @@
+Index: archhaskell/haskell-x11/PKGBUILD
+===================================================================
+--- archhaskell.orig/haskell-x11/PKGBUILD
++++ archhaskell/haskell-x11/PKGBUILD
+@@ -11,11 +11,12 @@ url="https://github.com/haskell-pkg-jani
+ license=("BSD3")
+ arch=('i686' 'x86_64')
+ makedepends=()
+ depends=("ghc=7.6.3-1"
+          "haskell-data-default=0.5.3-3"
+-         "X11"
+-         "Xrandr"
+-         "Xext")
++         "libx11"
++         "libxrandr"
++         "libxext"
++         "libxinerama")
+ options=('strip' 'staticlibs')
+ source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz")
+ install="${pkgname}.install"
