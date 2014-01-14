@@ -1,5 +1,4 @@
-# $Id: pkgbuild-mode.el,v 1.23 2007/10/20 16:02:14 juergen Exp $
-# Maintainer: XeCycle <xecycle@gmail.com>
+# Maintainer: Charles Paul <charlieap@gmail.com>
 pkgname=emacs-multiterm
 pkgver=0.8.9
 pkgrel=1
