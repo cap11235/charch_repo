@@ -1,0 +1,10 @@
+#!/bin/sh
+
+rm -rf pkg/* charch_repo.db.tar.gz
+
+for SRCDIR in pkgsrc/*; do
+  (cd $SRCDIR; makepkg -f)
+  cp $SRCDIR/*.pkg.tar.xz pkg
+done
+
+repo-add charch_repo.db.tar.gz pkg/*.pkg.tar.xz
